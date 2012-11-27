@@ -10,8 +10,8 @@
 <script src="js/jquery-1.8.2.min.js"></script>
 <script src="js/jqm.js"></script>
 <script src="js/jquery.mobile-1.2.0.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="js/utility.js"></script>
-<script src="js/jquery.mobile.forms.select.custom.js"></script>
+
+
 
 <script src="js/fastclick.js"></script>
 
@@ -20,7 +20,13 @@
 <script src="phonegap.js"></script>
 
 <style>
-  .ui-page { background-color: #FFFFF3;}
+  .ui-page { background-color: #FFFFF3;
+  height: 100% !important; 
+                  -webkit-backface-visibility: hidden;
+               }
+        .input { outline: none; }
+  
+  }
   .ui-content { background-color: #FFFFF3;}
  
  
@@ -40,7 +46,7 @@
 <!-- Start of first page: #one -->
 <div data-role="page" id="one">
 
-	<div data-role="header"  data-theme="f">
+	<div data-role="header"  data-theme="f" data-position="inline">
 		<h3>Welcome To APP4BIDES </h3>
 	</div><!-- /header -->
                
@@ -467,7 +473,7 @@ your phone, tablets or desktop. Also visit <a data-ajax="false" data-prefetch="t
 		
 	</div><!-- /content -->
 	
-	<div data-role="footer" data-theme="f">
+	<div data-role="footer" data-theme="f" data-position="fixed">
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page tw
