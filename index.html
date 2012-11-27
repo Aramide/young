@@ -1,10 +1,11 @@
-﻿<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>Feuerkultur</title>
+<meta name="apple-mobile-web-app-capable" content="no" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link rel="apple-touch-icon" type="image/png" href="../../apple-touch-icon.png">
+<link rel="apple-touch-icon-precomposed" type="image/png" href="attika-touch.png">
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
 
 <style>a, a:link {text-decoration: none;}
@@ -160,40 +161,81 @@ background-image:linear-gradient(#FDCD50,#DE5432);
 		background: url("../images/icontr@2x.png") no-repeat rgba(0, 0, 0, 0.4) !important;
 		background-size: 18px 18px;}
 }</style>
+<link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+
+<script src="bookmark_bubble.js"></script>
+<script src="example.js"></script>
+
 <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="js/custom.js"></script>
 <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+
+<script src="js/jquery.flexslider.js"></script>
+
 </head>
 <body>
-<div data-role="page" data-theme="a">
-<div data-role="header">
-<a href="../../index.html" rel="external" data-icon="arrow-l">Zurück</a>
-<h1>Holzfeuerstellen</h1>
-</div>
+<div data-role="page" data-theme="a" class="landing">
 <div data-role="content">
-<ul data-role="listview" data-inset="true" data-theme="d">
-<li><a href="juno.html"><img src="../../bilder/s_juno.png" /><h3>JUNO</h3><p>Die neue Leichtigkeit des Steins.</p></a></li>
-<li><a href="viva120.html"><img src="../../bilder/s_viva120.png" /><h3>VIVA 120</h3><p>Ein Sieger nach Punkten.</p></a></li>
-<li><a href="viva.html"><img src="../../bilder/s_viva.png" /><h3>VIVA 98</h3><p>Elegant und wirkungsvoll.</p></a></li>
-<li><a href="rina.html"><img src="../../bilder/s_rina.png" /><h3>RINA</h3><p>Klein aber fein.</p></a></li>
-<li><a href="q20.html"><img src="../../bilder/s_Q-20.png" /><h3>Q-20</h3><p>Jeder Funke pure Begeisterung.</p></a></li>
-<li><a href="art10.html"><img src="../../bilder/s_ART-10.png" /><h3>ART-10</h3><p>Die hohe Kunst der Feuerkultur.</p></a></li>
-<li><a href="pilar.html"><img src="../../bilder/s_PILAR.png" /><h3>PILAR</h3><p>Für das vollkommene Vergnügen an guter Energie.</p></a></li>
-<li><a href="xbasic.html"><img src="../../bilder/s_X-BASIC.png" /><h3>X-BASIC</h3><p>Gradlinig bis ins Detail.</p></a></li>
-<li><a href="xfront.html"><img src="../../bilder/s_X-FRONT.png" /><h3>X-FRONT</h3><p>Immer ein Unikat.</p></a></li>
-<li><a href="xboard.html"><img src="../../bilder/s_X-BOARD.png" /><h3>X-BOARD</h3><p>Ein Sideboard, das im Zentrum steht.</p></a></li>
-<li><a href="topas.html"><img src="../../bilder/s_TOPAS.png" /><h3>TOPAS</h3><p>Kein Grund zur Bescheidenheit.</p></a></li>
-<li><a href="opus.html"><img src="../../bilder/s_OPUS.png" /><h3>OPUS</h3><p>Das Feuer zeigt Selbstbewusstsein.</p></a></li>
-<li><a href="qbic.html"><img src="../../bilder/s_Q-BIC.png" /><h3>Q-BIC</h3><p>Auf Augenhöhe mit Ihren Wünschen.</p></a></li>
-<li><a href="avant.html"><img src="../../bilder/s_AVANT.png" /><h3>AVANT</h3><p>Schlanke Form für ungeschmälertes Feuervergnügen.</p></a></li>
-<li><a href="rondo.html"><img src="../../bilder/s_RONDO.png" /><h3>RONDO</h3><p>Aus Tradition im Trend.</p></a></li>
-<li><a href="epoca.html"><img src="../../bilder/s_EPOCA.png" /><h3>EPOCA</h3><p> Ein stilsicheres Vorbild an Sparsamkeit.</p></a></li>
-<li><a href="palo.html"><img src="../../bilder/s_PALO.png" /><h3>PALO</h3><p>Bereit für die Faszination am Feuer.</p></a></li>
-<li><a href="bando.html"><img src="../../bilder/s_BANDO.png" /><h3>BANDO</h3><p>Zeit für ein gutes Klima.</p></a></li>
-<li><a href="mino.html"><img src="../../bilder/s_MINO.png" /><h3>MINO</h3><p>Das kleine Format für die grosse Wahl.</p></a></li>
-<li><a href="taiko.html"><img src="../../bilder/s_TAIKO.png" /><h3>TAIKO</h3><p>Eine Feuerstelle, die etwas bewegt.</p></a></li>
-<li><a href="dom.html"><img src="../../bilder/s_DOM.png" /><h3>DOM</h3><p>Für lange Freude an schön geregelten Wärmeverhältnissen.</p></a></li>
-<li><a href="poleo.html"><img src="../../bilder/s_POLEO.png" /><h3>POLEO</h3><p>Gemütliches Feuer darf viele Gesichter haben.</p></a></li>
-<li><a href="geo.html"><img src="../../bilder/s_GEO.png" /><h3>GEO</h3><p>Macht aus jedem Raum ein Niedrigenergiezuhause.</p></a></li>
-</ul>
+  <img src="bilder/logo.png" alt="logo" width="140" height="56" class="logo">
+	
+	<div class="flex-container">
+		<div class="flexslider">
+		<ul class="slides">
+		<li><img src="images/slider/gelassenheit.jpg" alt="gelassenheit" /><a href="kontakt.html"><p class="flex-caption">Gelassenheit ist eine Tugend, die man am Feuer pflegt.</p></a></li>
+		<li><img src="bilder/teaser2_30.jpg" alt="nachhaltigkeit" /> </li>
+		<li><img src="bilder/teaser4_30.jpg" alt="feuer" /></li>
+		</ul>
+		</div>
+	</div>
+
+<div class="ui-grid-a brownedge shiny">
+	<div class="ui-block-a"><a href="kontakt.html" data-role="button" class="kontaktbutton">Kontakt</a></div>
+	<div class="ui-block-b"><a href="http://attika-shop.ch" rel="external" data-role="button">Shop</a></div>
 </div>
-</div></body></html>
+
+
+
+<div class="heading"><h3>Produktkatalog<br />︾</h3></div>
+<ul data-role="listview" data-inset="true" class="brownedge">
+<li><a href="produkte/holz/index.html"><img src="bilder/s_holz.png"><h3>Holzfeuerstellen</h3><p>Kaminöfen, Cheminéeöfen</p></a></li>
+<li><a href="produkte/cheminee/index.html"><img src="bilder/s_pure_120.png"><h3>Cheminée</h3><p>Cheminée-Einsätze</p></a></li>
+<li><a href="produkte/gas/index.html"><img src="bilder/gas_s_fairo903s.jpg"><h3>Gas-Feuerstellen</h3><p>Wohnbereich</p></a></li>
+<li><a href="produkte/elektro/index.html"><img src="bilder/elektrofeuer.png"><h3>Elektrofeuer</h3><p>Wohnbereich</p></a></li>
+<li><a href="produkte/bioethanol/index.html"><img src="bilder/bioethanol/coffee_tables_square80.jpg"><h3>Bioethanol</h3><p>Wohnbereich</p></a></li>
+<li><a href="produkte/outdoor/index.html"><img src="bilder/o_gizeh_s.png"><h3>Outdoor</h3><p>Aussenbereich</p></a></li>
+</ul>    
+
+
+<div class="heading"><h3>a t t i k a<br />︾</h3></div>
+<ul data-role="listview" data-inset="true" class="brownedge shiny">
+<li><a href="feuerkultur/index.html">Feuerkultur</a></li>
+<li><a href="ausstellung.html">Ausstellung</a></li>
+<li><a href="service.html">Service</a></li>
+<li><a href="unternehmen/index.html">Unternehmen</a></li>
+<li><a href="bezugsquellen.html">Bezugsquellen</a></li>
+
+</ul>
+
+<div data-role="fieldcontain" class="seitenansicht">
+   <label for="select-choice-1" class="select">Seiten Ansicht / Sprache:</label>
+   <select name="select-choice-1" id="select-choice-1" data-inline="true">
+      <option value="http://www.attika.ch/mobil">Mobil / deutsch</option>
+      <option value="http://www.attika.ch/klassisch.php?lang=de">Klassisch / deutsch</option>
+      <option value="http://www.attika.ch/klassisch.php?lang=fr">français</option>
+      <option value="http://www.attika.ch/klassisch.php?lang=en">english</option>
+      <option value="http://www.attika.ch/klassisch.php?lang=it">italiano</option>
+   </select>
+</div>
+
+<div class="rudelj">made by <a href="http://fliptation.ch">Fliptation</a></div>
+
+
+</div>
+</div>
+
+ 
+<script type="text/javascript">
+var _gaq=[["_setAccount","UA-17911180-6"],["_trackPageview"]];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";s.parentNode.insertBefore(g,s)}(document,"script"));
+</script>
+</body>
+</html>
