@@ -1,241 +1,178 @@
-<html>
+<!DOCTYPE html> 
+<html> 
 <head>
-<meta charset="utf-8">
-<title>Feuerkultur</title>
-<meta name="apple-mobile-web-app-capable" content="no" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link rel="apple-touch-icon-precomposed" type="image/png" href="attika-touch.png">
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="format-detection" content="telephone=no"> <!-- iPhone no-linking digit numbers -->
+	
+	
+	<title>
+		   Antico Casale di Scansano - Spa Resort in Maremma Toscana	</title>
 
-<style>a, a:link {text-decoration: none;}
-img {max-width: 100%;}
-img.fullwidth {margin: 14px 0 -5px;-webkit-box-shadow: 0px -4px 8px rgba(0,0,0,.6);}
-img.product {display: block;margin: 0 auto;padding: 0;border-radius: .6em;-webkit-box-shadow: 0px -4px 8px rgba(0,0,0,.6);}
-img.logo {display:block;margin:0 auto;}
-img.footer {position: relative;display:block;margin:45px auto -15px;}
-img.ibooks {float:left;padding-right:5px;}
-.brownedge {
-padding: .25em;border-radius: .75em;
-background: #847A6E;background: rgba(143,136,126,.8);
-background-image:-moz-linear-gradient(rgb(143,136,126),rgba(73,64,55,.9));
-background-image:-webkit-gradient(linear,left top,left bottom,from(rgb(143,136,126)),to(rgba(73,64,55,.9)));
-background-image:-webkit-linear-gradient(rgb(143,136,126),rgba(73,64,55,.9));
-background-image:-ms-linear-gradient(rgba(143,136,126,.7),rgba(73,64,55,.9));
-background-image:-o-linear-gradient(rgba(143,136,126,.7),rgba(73,64,55,.9));
-background-image:linear-gradient(rgba(143,136,126,.7),rgba(73,64,55,.9));}
-
-.heading {text-align:center;text-shadow:0px -1px 1px #000, 0px 0px 6px #eee;color:inherit;margin-bottom:-1em}
-.rudelj {width: 100px;margin:0 auto;text-align: center;padding: 2em;font-size: small;}
-.rudelj span {color: #fff}
-.vertretungen p,.geschichte p {border-bottom: 1px dotted #cccccc;padding-bottom: .5em}
-.hotels {font-size: 95%}
-.clearfix {clear:both;padding:4px 2px;}
-.oeff {margin-left: 10px }
-.seitenansicht {width:auto;margin: 0 auto;text-align:center}
-table {width:100%;}
-table caption {text-align:left;}
-table thead th {text-align:left;border-bottom-width:1px;border-top-width:1px;}
-table th, td {text-align:left;padding:6px 0px;} 
-.disc {list-style-type:disc;font-weight:bold;}
-.circle {list-style-type:circle;font-weight:lighter}
-.elektro h2, .elektro h3 {text-transform: uppercase}
-.chemineefach h2, .gasfach h2 {border-bottom: 1px dotted #7F776F}
-
-.chemineefach .ui-grid-a, .gasfach .ui-grid-a {font-size: 80%;}
-.chemineefach .ui-block-b, .gasfach .ui-block-b {text-align: right}
-.chemineefach .ui-block-a, .chemineefach .ui-block-b, .gasfach .ui-block-a, .gasfach .ui-block-b {min-height: 100px}
-
-.ui-dialog .ui-header .ui-title {text-overflow: none;overflow: visible;white-space: normal;}
-
-.ui-listview-filter .ui-input-search {
-margin: 15px 5px;
-}
-
-.ui-content {max-width: 480px; margin: 0 auto}
-.ui-header .jqm-home { top:0.65em; }
-.ui-grid-a {margin: 1em 0 0}
-.ui-grid-a .ui-btn {margin: 0}
-.ui-block-a .ui-btn {margin-right: .25em}
-.ui-block-b .ui-btn {margin-left: .25em}
-
-.bestellen {margin: .5em -.5em}
-.bestellen .ui-btn-inner {text-align: left;padding-left: 40px}
-
-/*-------jQm swatch A overwrite-----------*/
-
-.ui-bar-a {border: none;background: none;color: #cccccc;}
-.ui-bar-a, .ui-bar-a input, .ui-bar-a select, .ui-bar-a textarea, .ui-bar-a button {font-family:TrebuchetMS,Helvetica,Arial,sans-serif;margin-top: 4px;}
-html,body,.ui-body-a,.ui-dialog.ui-overlay-a{
-color:#cccccc;
-text-shadow: 0 -1px 0 black;
-font-family:TrebuchetMS,Helvetica,Arial,sans-serif;
-background:url(../images/noise.png), #111414;
-background-image:url(../images/noise.png), -webkit-radial-gradient(top, 250px 300px, rgba(85,78,81,.9),rgba(17, 20, 20,0));
-background-image:url(../images/noise.png), -moz-linear-gradient(top,#222,rgba(17, 20, 20,0));
-background-image:url(../images/noise.png), -ms-linear-gradient(#222,rgba(17, 20, 20,0));
-background-image:url(../images/noise.png), -o-linear-gradient(#222,rgba(17, 20, 20,0));
-background-image:url(../images/noise.png), linear-gradient(#222,rgba(17, 20, 20,0));
-}
-
-.ui-body-a .ui-link,.ui-body-a .ui-link:visited  {color: #81796F}
-.ui-btn-corner-all {-moz-border-radius: .6em;-webkit-border-radius: .6em;border-radius: .6em;}
-
-.ui-btn-inner {border-top: 1px solid #ADA69C;border-color: rgba(173,166,156,.5)}
-
-.ui-btn-up-a, .ui-btn-up-a a.ui-link-inherit {color: #cccccc;}
-
-.ui-btn-up-a {background-image:url(../images/noise.png), -webkit-gradient(linear, left top, left bottom, from( #474747), to( #2F2F2F )); /* Saf4+, Chrome */
-  	      background-image:url(../images/noise.png), -webkit-linear-gradient(#474747 , #2F2F2F ); /* Chrome 10+, Saf5.1+ */
-		      -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.3);box-shadow: 0 1px 0 rgba(255,255,255,.3);}
-
-.ui-btn-hover-a .ui-btn-inner {border-color: #111;text-shadow: 0 0 6px rgba(255,255,255,.9);-webkit-box-shadow:inset 1px 2px 2px rgba(0,0,0,.4)}
-
-.ui-bar-d {
-border: none;
-background: #ADA69C;
-color: #333;
-text-shadow: 0 1px 0 #DCCCB7;
-background-image:url(../images/noise.png),  -webkit-gradient(linear,left top,left bottom,from(#ADA69C),to(#847A6E));
-background-image:url(../images/noise.png),  -webkit-linear-gradient(#ADA69C,#847A6E);
-background-image:url(../images/noise.png),  -moz-linear-gradient(#ADA69C,#847A6E);
-background-image:url(../images/noise.png),  -ms-linear-gradient(#ADA69C,#847A6E);
-background-image:url(../images/noise.png),  -o-linear-gradient(#ADA69C,#847A6E);
-background-image:url(../images/noise.png),  linear-gradient(#ADA69C,#847A6E);
-}
-
-.ui-btn {font-family:TrebuchetMS,Helvetica,Arial,sans-serif;}
-
-.shiny .ui-btn {-webkit-box-shadow: inset hsla(200,0%,0%,.1) 0 -20px 0px, inset rgba(73,64,55,.7) 0 -4px 12px, rgba(0,0,0,.5) 0 3px 2px -1px;}
-.ui-bar-d {-webkit-box-shadow: inset hsla(200,0%,0%,.1) 0 -14px 0px, inset rgba(73,64,55,.9) 0 -4px 10px, rgba(0,0,0,.5) 0 3px 2px -1px;}
-
-.ui-btn-hover-a, .shiny .ui-btn-hover-a{
-background-image:-webkit-gradient(linear,left top,left bottom,from(#323232),to(#333));
-background-image:-webkit-linear-gradient(#323232,#333);
-background-image:-moz-linear-gradient(#323232,#333);
-background-image:-ms-linear-gradient(#323232,#333);
-background-image:-o-linear-gradient(#323232,#333);
-background-image:linear-gradient(#323232,#333);
--webkit-box-shadow: inset rgba(0,0,0,.2) 0 -4px 10px;
-}
-
-.ui-btn-active{
-border:1px solid #111414;background:#FD9E00;font-weight:bold;color:#fff;
-text-shadow:-1px -1px 6px rgba(42, 39, 38,.2), 1px 1px 6px #333;
-background-image:-moz-linear-gradient(#FDCD50,#DE5432);
-background-image:-webkit-gradient(linear,left top,left bottom,from(#FDCD50),to(#DE5432));
-background-image:-webkit-linear-gradient(#FDCD50,#DE5432);
-background-image:-ms-linear-gradient(#FDCD50,#DE5432);
-background-image:-o-linear-gradient(#FDCD50,#DE5432);
-background-image:linear-gradient(#FDCD50,#DE5432);
-}
-
-.ui-br {border-bottom: none}
-.ui-icon-loading{background-image:url(../images/ajax-loader-attikab.png)}
-.ui-loader{width: 100px;margin-left: -80px;}
-
-.landing {background-image:url(../images/noise.png), -webkit-radial-gradient(top, 250px 800px, rgba(85,78,81,.9),rgba(17, 20, 20,0));}
+<link rel="stylesheet" href="http://m.anticocasalediscansano.it/wp-content/plugins/sitepress-multilingual-cms/res/css/language-selector.css?v=2.3.0" type="text/css" media="all" />
+	
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="pingback" href="http://m.anticocasalediscansano.it/xmlrpc.php" />
+		<link rel="alternate" type="application/rss+xml" title="Antico Casale di Scansano &raquo; Feed" href="http://m.anticocasalediscansano.it/en/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Antico Casale di Scansano &raquo; Comments Feed" href="http://m.anticocasalediscansano.it/en/comments/feed/" />
+<script type='text/javascript' src='http://m.anticocasalediscansano.it/wp-includes/js/l10n.js?ver=20101110'></script>
+<link rel='index' title='Antico Casale di Scansano' href='http://m.anticocasalediscansano.it/en/' />
+<script type="text/javascript">var icl_lang = 'en';var icl_home = 'http://m.anticocasalediscansano.it/en/';</script>
+<script type="text/javascript" src="http://m.anticocasalediscansano.it/wp-content/plugins/sitepress-multilingual-cms/res/js/sitepress.js"></script>
+<meta name="generator" content="WPML ver:2.3.0 stt:1,27;0" />
+ 
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" />
+	<link rel="stylesheet" href="http://m.anticocasalediscansano.it/wp-content/themes/anticocasale_mobile/style.css" type="text/css" />
+	<link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (-o-min-device-pixel-ratio: 3/2),only screen and (min-device-pixel-ratio: 1.5)"	type="text/css" href="http://m.anticocasalediscansano.it/wp-content/themes/anticocasale_mobile/css/highdpi.css" />
 
 
-.slides,.brownedge{-webkit-box-shadow: 0px -4px 8px rgba(0,0,0,.6),0px 4px 8px rgba(0,0,0,.6)}
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
+	<script type="text/javascript" src="http://m.anticocasalediscansano.it/wp-content/themes/anticocasale_mobile/js/jquery.cookie.js"></script>
+	
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+	var _gaq = [['_setAccount', 'UA-24162255-1'], ['_trackPageview']];(function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.async = g.src = '//www.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+  }(document, 'script'));
+	</script>
+         
+      	
+	<script type="text/javascript"> 
+		$(function () {	    
+		    $('#fullsite').click(function () {
+		        $.cookie('FULLSITE', 'yes', {domain: 'anticocasalediscansano.it'});
+		    });
+		});
+	</script>	
 
-
-.gallery { margin:4px 0;}
-.gallery article a.inner{display: block;padding:4px;text-decoration:none;}.gallery article img{display: block;width:100%;}
-.gallery article{position:relative;float:left;margin:.3em;width: 50px; height: 50px;}
-.gallery article.last{display: inline;width: auto; height: auto;}
-.gallery article a:link {-webkit-tap-highlight-color: #ED1C24;}
-  
-.ui-icon-attika-map {
-	background: url("../images/iconmap.png") no-repeat rgba(0, 0, 0, 0.4) !important;}
-.ui-icon-attika-email {
-	background: url("../images/iconemail.png") no-repeat rgba(0, 0, 0, 0.4) !important;}
-.ui-icon-attika-phone {
-	background: url("../images/iconphone.png") no-repeat rgba(0, 0, 0, 0.4) !important;}
-.ui-icon-attika-fb {
-	background: url("../images/iconfb.png") no-repeat rgba(0, 0, 0, 0.4) !important;}
-.ui-icon-attika-tw {
-	background: url("../images/icontr.png") no-repeat rgba(0, 0, 0, 0.4) !important;}
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-	.ui-icon-attika-tw {
-		background: url("../images/icontr@2x.png") no-repeat rgba(0, 0, 0, 0.4) !important;
-		background-size: 18px 18px;}
-}</style>
-<link href="css/flexslider.css" rel="stylesheet" type="text/css" />
-
-<script src="bookmark_bubble.js"></script>
-<script src="example.js"></script>
-
-<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-<script src="js/custom.js"></script>
-<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
-
-<script src="js/jquery.flexslider.js"></script>
 
 </head>
+
 <body>
-<div data-role="page" data-theme="a" class="landing">
-<div data-role="content">
-  <img src="bilder/logo.png" alt="logo" width="140" height="56" class="logo">
+
+  
+
+	<div data-role="page" id="jqm-home">
+		
+		<div class="header">
+	<div class="where"><span><span>Tuscan Maremma</span></span></div>	<h1><a href="http://m.anticocasalediscansano.it/en/"><span>Antico Casale di Scansano</span></a></h1>
+</div>		
+		<div data-role="content">
+
+		    <ul data-role="listview" data-inset="true" id="listview" >
+				<li><a href="http://m.anticocasalediscansano.it/en/wellness-spa-resort/">Spa & Resort</a></li>
+				<li><a href="http://m.anticocasalediscansano.it/en/rooms-suites/">Rooms & Suites</a></li>
+				<li><a href="http://m.anticocasalediscansano.it/en/holiday-apartments/">Holiday Apartments</a></li>
+				<li><a href="http://m.anticocasalediscansano.it/en/horse-riding-centre/">Horse Riding Centre</a></li>
+				<li><a href="http://m.anticocasalediscansano.it/en/restaurant/">Restaurant</a></li>
+			</ul>
+		
+		    <ul data-role="listview" data-inset="true" id="offers" >
+				<li><a href="http://m.anticocasalediscansano.it/en/wellbeing-offers/">Wellbeing Offers</a></li>
+			</ul>
+
+
+
+
+
+
+	</div> <!-- fine content -->	
 	
-	<div class="flex-container">
-		<div class="flexslider">
-		<ul class="slides">
-		<li><img src="images/slider/gelassenheit.jpg" alt="gelassenheit" /><a href="kontakt.html"><p class="flex-caption">Gelassenheit ist eine Tugend, die man am Feuer pflegt.</p></a></li>
-		<li><img src="bilder/teaser2_30.jpg" alt="nachhaltigkeit" /> </li>
-		<li><img src="bilder/teaser4_30.jpg" alt="feuer" /></li>
-		</ul>
-		</div>
-	</div>
+		<div class="footer">
+		
+					
+				<div class="home-call">
+						<strong><a href="tel:+390564507219">+39 0564 507219</a></strong>
+						<span>Call and Book</span>
+				</div>			
+						
+			<div class="follow">			
+				<h4>Follow and Participate in our Community</h4>
+				<span class="right">
+					<a href="http://www.tripadvisor.it/Hotel_Review-g642191-d252561-Reviews-Hotel_Resort_Antico_Casale_di_Scansano-Scansano_Province_of_Grosseto_Tuscany.html" class="ta"><span>TripAdvisor</span></a>
+					<strong>Certificate<br />of Excellence</strong>
+					<em>MAY 2011</em>
+				</span>
+				<span class="left">
+					<a href="http://www.facebook.com/AnticoCasaleDiScansano" class="fb"><span>Facebook</span></a>
+					<a href="http://twitter.com/AnticoCasale" class="tw"><span>Twitter</span></a>
+					<a href="http://m.flickr.com/photos/anticocasalediscansano/" class="fl"><span>Flickr</span></a>
+				</span>	
 
-<div class="ui-grid-a brownedge shiny">
-	<div class="ui-block-a"><a href="kontakt.html" data-role="button" class="kontaktbutton">Kontakt</a></div>
-	<div class="ui-block-b"><a href="http://attika-shop.ch" rel="external" data-role="button">Shop</a></div>
-</div>
-
-
-
-<div class="heading"><h3>Produktkatalog<br />︾</h3></div>
-<ul data-role="listview" data-inset="true" class="brownedge">
-<li><a href="produkte/holz/index.html"><img src="bilder/s_holz.png"><h3>Holzfeuerstellen</h3><p>Kaminöfen, Cheminéeöfen</p></a></li>
-<li><a href="produkte/cheminee/index.html"><img src="bilder/s_pure_120.png"><h3>Cheminée</h3><p>Cheminée-Einsätze</p></a></li>
-<li><a href="produkte/gas/index.html"><img src="bilder/gas_s_fairo903s.jpg"><h3>Gas-Feuerstellen</h3><p>Wohnbereich</p></a></li>
-<li><a href="produkte/elektro/index.html"><img src="bilder/elektrofeuer.png"><h3>Elektrofeuer</h3><p>Wohnbereich</p></a></li>
-<li><a href="produkte/bioethanol/index.html"><img src="bilder/bioethanol/coffee_tables_square80.jpg"><h3>Bioethanol</h3><p>Wohnbereich</p></a></li>
-<li><a href="produkte/outdoor/index.html"><img src="bilder/o_gizeh_s.png"><h3>Outdoor</h3><p>Aussenbereich</p></a></li>
-</ul>    
-
-
-<div class="heading"><h3>a t t i k a<br />︾</h3></div>
-<ul data-role="listview" data-inset="true" class="brownedge shiny">
-<li><a href="feuerkultur/index.html">Feuerkultur</a></li>
-<li><a href="ausstellung.html">Ausstellung</a></li>
-<li><a href="service.html">Service</a></li>
-<li><a href="unternehmen/index.html">Unternehmen</a></li>
-<li><a href="bezugsquellen.html">Bezugsquellen</a></li>
-
-</ul>
-
-<div data-role="fieldcontain" class="seitenansicht">
-   <label for="select-choice-1" class="select">Seiten Ansicht / Sprache:</label>
-   <select name="select-choice-1" id="select-choice-1" data-inline="true">
-      <option value="http://www.attika.ch/mobil">Mobil / deutsch</option>
-      <option value="http://www.attika.ch/klassisch.php?lang=de">Klassisch / deutsch</option>
-      <option value="http://www.attika.ch/klassisch.php?lang=fr">français</option>
-      <option value="http://www.attika.ch/klassisch.php?lang=en">english</option>
-      <option value="http://www.attika.ch/klassisch.php?lang=it">italiano</option>
-   </select>
-</div>
-
-<div class="rudelj">made by <a href="http://fliptation.ch">Fliptation</a></div>
+			</div> <!-- fine follow -->	
+			
+			<div class="lang">
+				<div class="left">
+					<strong>Language</strong>					
+					        
 
 
-</div>
-</div>
+			
+                    <a href="http://m.anticocasalediscansano.it/en/"  class="lang_sel_sel en">
 
- 
+                    <span  class="icl_lang_sel_current">English</span>                    </a>
+
+			
+                    <a href="http://m.anticocasalediscansano.it/"  class=" lang_sel_other it">
+
+                    <span  class="icl_lang_sel_native">Italiano</span> <span  class="icl_lang_sel_translated"><span  class="icl_lang_sel_native">(</span>Italian<span  class="icl_lang_sel_native">)</span></span>                    </a>
+
+			
+			
+							</div>
+				
+				<a href="http://www.anticocasalediscansano.it/" class="btn beige" id="fullsite">Full Site</a>
+			</div>
+			
+			<div class="copyright">
+				<p>&copy;2011 Antico Casale di Scansano</p>
+				<p class="tos">P.I. 00921450532 • Reg.Imp. 74279, 15/02/1988</p>
+				<!-- <p class="tos"><a href="#">Privacy</a> &middot; <a href="#"></a></p> -->
+
+			</div>
+			
+			<p class="by">designed <em>by</em> <a href="http://www.musecomunicazione.it/"><strong>MuseComunicazione</strong></a></p>
+
+		</div> <!-- fine footer -->
+
+
+		<div data-role="footer" data-position="fixed" data-id="footer">
+			<a href="http://m.anticocasalediscansano.it/en/" data-transition="slideup" id="btn-menu">Menu</a>
+			<a href="https://www.blastnessbooking.com/ricerca_mobile.htm?id_albergo=5602&id_canale=&dc=1614&lingua_int=ita" id="btn-book">Booking</a>
+			<a href="http://m.anticocasalediscansano.it/en/contacts/" id="btn-contact">Contacts</a>
+			<a href="http://maps.google.com/maps?f=q&source=s_q&hl=it&geocode=&q=Hotel+Resort+Antico+Casale+di+Scansano&aq=&sll=37.0625,-95.677068&sspn=60.806372,89.472656&ie=UTF8&hq=Hotel+Resort+Antico+Casale&hnear=Scansano+Provincia+di+Grosseto,+Toscana,+Italia&ll=42.685085,11.352353&spn=0.007011,0.010922&z=08" data-transition="pop" id="btn-map">Map</a>
+		</div>		
+
+	</div><!-- data role content-->
+
+
+<!-- Google Analytics -->
+<!--<img src="http://nojsstats.appspot.com/UA-24162255-1/m.anticocasalediscansano.it" />-->
+
 <script type="text/javascript">
-var _gaq=[["_setAccount","UA-17911180-6"],["_trackPageview"]];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";s.parentNode.insertBefore(g,s)}(document,"script"));
+$( '[data-role=page]' ).live( 'pageshow', function (event, ui) {
+        try 
+        {
+            if ( location.hash )
+            {
+            	url = location.hash;
+            }
+            else 
+            {
+               url = defaulturl;
+            }
+            _gaq.push( ['_trackPageview', url] );
+        } 
+        catch( error ) 
+        {
+	  // Oh no! Call the catch logger
+        }
+    });
 </script>
+  	
 </body>
 </html>
